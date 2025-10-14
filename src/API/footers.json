@@ -1,0 +1,40 @@
+{
+  "brand": {
+    "title": "Clima",
+    "tagline": "Accurate weather, anytime, anywhere."
+  },
+  "community": {
+  "text": "Join Our Community",
+  "links": [
+    {
+      "name": "Facebook",
+      "url": "https://facebook.com/",
+      "icon": "fa-brands fa-facebook-f"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/",
+      "icon": "fa-brands fa-twitter"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://instagram.com/",
+      "icon": "fa-brands fa-instagram"
+    }
+    ]
+  },
+  "navigation": [
+    { "name": "Home", "url": "/" },
+    { "name": "About", "url": "/about" },
+    { "name": "Search", "url": "/search" },
+    { "name": "Contact", "url": "/contact" }
+  ],
+  "contact": {
+    "text": "Let’s Discuss / Contact",
+    "email": "support@clima.com"
+  },
+  "legal": {
+  "disclaimer": "Weather data provided by OpenWeatherMap API.",
+  "copyright": "© 2025 Clima by Aditya Gupta. All rights reserved."
+  }
+}
