@@ -1,6 +1,6 @@
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { TiWeatherWindyCloudy } from "react-icons/ti";
 
 export const Headers = () => {
@@ -8,10 +8,10 @@ export const Headers = () => {
   const navigate = useNavigate();
 
   const handleSearch = (e) => {
-    e.preventDefault(); // prevent page reload
+    e.preventDefault(); 
     if (city.trim() !== "") {
       navigate(`/search?city=${city}`);
-      setCity(""); // optional: clear input after search
+      setCity(""); 
     }
   };
 
@@ -27,7 +27,6 @@ export const Headers = () => {
               </h1>
             </NavLink>
           </div>
-
           <div className="navbar-right">
             {/* search-bar */}
             <form className="header-search-form" onSubmit={handleSearch}>
