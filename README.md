@@ -5,22 +5,15 @@ Experience live at: [ClimaXpress Demo](https://aditya11376.github.io/ClimaXpress
 
 ---
 
-## 🖼️ Preview
-
-![Weather App Screenshot](https://raw.githubusercontent.com/aditya11376/ClimaXpress/main/public/preview.png)
-
----
-
 ## 📖 About the Project
 
-**ClimaXpress** provides accurate, current, and 5-day weather forecasts for any location. It features dynamic visual themes, intuitive search functionality, and responsive design across all devices.
+**ClimaXpress** provides accurate, current weather forecasts for any location. It features dynamic visual themes, intuitive search functionality, and responsive design across all devices.
 
 ---
 
 ## ✨ Features
 
-- Live weather data with temperature, humidity, wind speed  
-- 5-day forecast with icons and conditions  
+- Live weather data with temperature, humidity, wind speed   
 - Dynamic backgrounds based on weather status  
 - Responsive UI for all screen sizes  
 - Smooth animations and transitions  
@@ -43,111 +36,23 @@ Experience live at: [ClimaXpress Demo](https://aditya11376.github.io/ClimaXpress
 ## ⚙️ Installation & Setup
 
 Clone and run ClimaXpress locally:
-
+```bash
 git clone https://github.com/aditya11376/ClimaXpress.git
 cd ClimaXpress
 npm install
-
-text
+```
 
 Create a `.env` file in the root directory:
-
+```env
 REACT_APP_API_KEY=your_api_key_here
-
-text
+```
 
 Then start the development server:
-
+```bash
 npm start
+```
 
-text
-
-Visit the app on your browser at `http://localhost:3000`.
-
----
-
-## 💻 Code Example
-
-### `App.js`
-
-import React, { useState, useEffect } from "react";
-import "./App.css";
-
-const App = () => {
-const [city, setCity] = useState("London");
-const [weatherData, setWeatherData] = useState(null);
-const API = https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_API_KEY}&units=metric;
-
-useEffect(() => {
-fetch(API)
-.then((response) => response.json())
-.then((data) => setWeatherData(data));
-}, [city]);
-
-return (
-<div className="App">
-<h1 className="title">ClimaXpress</h1>
-<input
-value={city}
-onChange={(e) => setCity(e.target.value)}
-placeholder="Search city..."
-/>
-{weatherData && (
-<div className="weather-card">
-<h2>{weatherData.name}</h2>
-<p>{weatherData.main.temp}°C</p>
-<p>{weatherData.weather.main}</p>
-<p>Humidity: {weatherData.main.humidity}%</p>
-<p>Wind: {weatherData.wind.speed} m/s</p>
-</div>
-)}
-</div>
-);
-};
-
-export default App;
-
-text
-
----
-
-### `App.css`
-
-body {
-margin: 0;
-font-family: "Poppins", sans-serif;
-background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-}
-
-.App {
-background-color: rgba(255, 255, 255, 0.15);
-padding: 2rem;
-border-radius: 15px;
-text-align: center;
-backdrop-filter: blur(10px);
-}
-
-input {
-padding: 0.7rem;
-width: 80%;
-border: none;
-border-radius: 8px;
-}
-
-.weather-card {
-margin-top: 1.5rem;
-}
-
-.title {
-font-weight: 600;
-margin-bottom: 1rem;
-}
-
-text
+Visit the app on your browser at `http://localhost:5173`.
 
 ---
 
@@ -156,11 +61,7 @@ text
 You can try it live here:  
 [**Live Project Demo**](https://aditya11376.github.io/ClimaXpress/)
 
-If you search for **New Delhi**, you’ll see:
-
-![Demo New Delhi](https://raw.githubusercontent.com/aditya11376/ClimaXpress/main/public/demo.png)
-
----
+--
 
 ## 📂 Project Structure
 
@@ -178,17 +79,6 @@ ClimaXpress/
 │
 └── .env
 
-text
-
----
-
-## 🚀 Future Improvements
-
-- Geolocation-based weather detection  
-- Hourly and 7-day extended forecast  
-- Dark/light theme toggle  
-- Voice-based weather search  
-
 ---
 
 ## 🔗 APIs Used
@@ -196,15 +86,13 @@ text
 - [OpenWeatherMap API](https://openweathermap.org/api)
 
 Example endpoint:
-https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY&units=metric
-
-text
+https://api.openweathermap.org/data/2.5/weather?q=YOUR_CITY&appid=YOUR_API_KEY&units=metric
 
 ---
 
 ## 👨‍💻 Author
 
-Developed by **Aditya**  
+Developed by **ADITYA GUPTA**  
 GitHub: [@aditya11376](https://github.com/aditya11376)  
 Live Link: [ClimaXpress](https://aditya11376.github.io/ClimaXpress/)
 
